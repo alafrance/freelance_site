@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Theme Général
+@import '../css/theme/style.scss';
+@import "../css/theme/main.css";
+
+
+// owl carousel CSS
+// <link rel="stylesheet" href="css/owl.carousel.min.css">
+@import "../css/theme/owl.theme.default.min.css";
+
+
+// Popup
+@import "../css/theme/magnific-popup.css";
+
+// Animate
+@import "../css/theme/animate.min.css";
+
+// Font Icon
+@import "../css/theme/et-line.css";

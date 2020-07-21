@@ -3,10 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ddc2bafeff.js" crossorigin="anonymous"></script>
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+		{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+
+				<!-- Renders app.js & a webpack runtime.js file
+				<script src="/build/runtime.js"></script>
+				<script src="/build/app.js"></script> -->
+		{% endblock %}
     </body>
 </html>
