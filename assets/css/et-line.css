@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'et-line';
-	src:url('../../fonts/et-line.eot');
-	src:url('../../fonts/et-line.eot') format('embedded-opentype'),
-		url('../../fonts/et-line.woff') format('woff'),
-		url('../../fonts/et-line.ttf') format('truetype');
+	src:url('../fonts/et-line.eot');
+	src:url('../fonts/et-line.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/et-line.woff') format('woff'),
+		url('../fonts/et-line.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

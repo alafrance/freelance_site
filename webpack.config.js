@@ -11,9 +11,11 @@ Encore
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
-
-    .copyFiles({
-        from: './assets/img' })
+    .autoProvideVariables({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+    })
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -28,7 +30,8 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     //.addEntry('page1', './assets/js/page1.js')
-    .addEntry('checkout', './assets/css/checkout.scss')
+    //.addEntry('page2', './assets/js/page2.js')
+
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
@@ -71,6 +74,8 @@ Encore
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
-;
+    .copyFiles({
+            from: './assets/img'
+    })
 
 module.exports = Encore.getWebpackConfig();

@@ -37,6 +37,7 @@ TABLE OF CONTENTS
 $tablet: 767px;
 $desk: 991px;
 
+@import "main.css";
 
 body{
 	font-family: 'Poppins', sans-serif;
@@ -44,9 +45,6 @@ body{
 	font-weight: 400;
 }
 
-section#home{
-	background-image: url('../../img/bg.jpg');
-}
 .section-padding{
 	padding: 100px 0;
 }
@@ -66,7 +64,7 @@ section#home{
 			content: '';
 			width: 100%;
 			height: 30px;
-			background-image: url(../../img/dots.png);
+			background-image: url(../img/dots.png);
 			background-repeat: repeat;
 			position: absolute;
 			bottom: -10px;
@@ -385,7 +383,7 @@ p{
 			position: absolute;
 			left: 0px;
 			bottom: -30px;
-			background-image: url(../../img/dots.png);
+			background-image: url(../img/dots.png);
 			background-repeat: repeat;
 			z-index: -1;
 		}

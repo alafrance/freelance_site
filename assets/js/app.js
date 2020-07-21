@@ -7,17 +7,17 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import '../css/app.scss';
-import $ from 'jquery';
 require('bootstrap');
-import '../js/theme/app.js';
-import '../js/theme/scrollIt.min.js';
-import '../js/theme/jquery.magnific-popup.min.js';
-import '../js/theme/owl.carousel.min.js';
-import '../js/theme/jquery.stellar.min.js';
-import '../js/theme/animated.headline.js';
-import '../js/theme/jquery.waypoints.min.js';
-import '../js/theme/jquery.counterup.min.js';
-import '../js/theme/isotope.pkgd.min.js';
-import '../js/theme/validator.js';
-import '../js/theme/custom.js';
 
+import $ from 'jquery';
+import '../js/migrate/src/migrate.js';
+import './scrollIt.min.js';
+import './jquery.magnific-popup.min.js';
+import './owl.carousel.min.js';
+import './jquery.stellar.min.js';
+import './animated.headline.js';
+import './jquery.waypoints.min.js';
+import './jquery.counterup.min.js';
+import './isotope.pkgd.min.js';
+import './validator.js';
+import './custom.js';
