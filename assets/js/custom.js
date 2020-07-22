@@ -66,10 +66,13 @@ $(function() {
         if(bodyScroll > h_hight){
 
             navbar.addClass("nav-scroll");
+            $("#logo").attr("src", "build/logo_black.png");
 
         }else{
 
             navbar.removeClass("nav-scroll");
+            $("#logo").attr("src", "build/logo.png");
+
         }
     });
 
